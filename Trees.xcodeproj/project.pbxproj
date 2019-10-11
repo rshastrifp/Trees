@@ -10,6 +10,9 @@
 		91B8BD8F234CEB580034C799 /* Trees.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B8BD85234CEB580034C799 /* Trees.framework */; };
 		91B8BD94234CEB580034C799 /* TreesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8BD93234CEB580034C799 /* TreesTests.swift */; };
 		91B8BD96234CEB580034C799 /* Trees.h in Headers */ = {isa = PBXBuildFile; fileRef = 91B8BD88234CEB580034C799 /* Trees.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91B8BDA0234CEB7C0034C799 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8BD9F234CEB7C0034C799 /* BinaryTree.swift */; };
+		91B8BDA2234CEBAF0034C799 /* BinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8BDA1234CEBAF0034C799 /* BinaryTreeTests.swift */; };
+		91B8BDA4234D05260034C799 /* BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8BDA3234D05260034C799 /* BST.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		91B8BD8E234CEB580034C799 /* TreesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B8BD93234CEB580034C799 /* TreesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreesTests.swift; sourceTree = "<group>"; };
 		91B8BD95234CEB580034C799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91B8BD9F234CEB7C0034C799 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		91B8BDA1234CEBAF0034C799 /* BinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeTests.swift; sourceTree = "<group>"; };
+		91B8BDA3234D05260034C799 /* BST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BST.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				91B8BD88234CEB580034C799 /* Trees.h */,
+				91B8BD9F234CEB7C0034C799 /* BinaryTree.swift */,
+				91B8BDA3234D05260034C799 /* BST.swift */,
 				91B8BD89234CEB580034C799 /* Info.plist */,
 			);
 			path = Trees;
@@ -81,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				91B8BD93234CEB580034C799 /* TreesTests.swift */,
+				91B8BDA1234CEBAF0034C799 /* BinaryTreeTests.swift */,
 				91B8BD95234CEB580034C799 /* Info.plist */,
 			);
 			path = TreesTests;
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					91B8BD84234CEB580034C799 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					91B8BD8D234CEB580034C799 = {
 						CreatedOnToolsVersion = 11.0;
@@ -195,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B8BDA0234CEB7C0034C799 /* BinaryTree.swift in Sources */,
+				91B8BDA4234D05260034C799 /* BST.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B8BDA2234CEBAF0034C799 /* BinaryTreeTests.swift in Sources */,
 				91B8BD94234CEB580034C799 /* TreesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +353,7 @@
 		91B8BD9A234CEB580034C799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SFWANW347N;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ronak.Trees;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		91B8BD9B234CEB580034C799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SFWANW347N;
@@ -388,6 +404,7 @@
 		91B8BD9D234CEB580034C799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFWANW347N;
 				INFOPLIST_FILE = TreesTests/Info.plist;
@@ -406,6 +423,7 @@
 		91B8BD9E234CEB580034C799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFWANW347N;
 				INFOPLIST_FILE = TreesTests/Info.plist;
